@@ -1,3 +1,4 @@
+import Navbar from './components/home/Navbar';
 import './globals.css';
 
 import { Poppins } from 'next/font/google';
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body
         className={` selection:bg-[#5c2ede] selection:text-white ${font.className}`}
       >
+        <Navbar />
         {children}
       </body>
     </html>

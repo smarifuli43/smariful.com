@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import heroImg from '../../../public/images/ariful1.jpg';
+import heroImg from '../../../public/images/ariful1.jpeg';
 import Image from 'next/image';
 
 const Hero = () => {
@@ -13,7 +13,7 @@ const Hero = () => {
 
       <div
         className='absolute left-[48%] top-20  rotate-12 rounded-3xl bg-gradient-to-l 
-       from-rose-600/50 to-sky-400  opacity-20 blur-3xl filter h-44 w-[200px] lg:h-32 lg:w-[450px] xl:h-44 xl:w-[600px]'
+       from-rose-600/50 to-sky-400  opacity-20 blur-3xl filter h-44 w-[100px] sm:w-[200px] lg:h-32 lg:w-[450px] xl:h-44 xl:w-[600px]'
       ></div>
 
       <div className='flex items-center h-screen '>
@@ -32,14 +32,13 @@ const Hero = () => {
 
           <Link
             href='/'
-            className='px-4 py-2 rounded cursor-pointer bg-slate-700 lg:text-lg hover:bg-slate-900 absolute z-30'
+            className='px-4 py-2 rounded cursor-pointer bg-slate-700 lg:text-lg hover:bg-slate-900 absolute z-20'
           >
             Let's connect
           </Link>
         </div>
         <div className=''>
-          <Image src={heroImg} className='w-[300px]'></Image>
-          {/* <img src={heroImg}  alt='Ariful Photo' /> */}
+          {/* <Image src={heroImg} className='w-[300px]'></Image> */}
         </div>
       </div>
     </div>
