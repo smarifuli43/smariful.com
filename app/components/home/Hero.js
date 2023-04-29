@@ -5,15 +5,15 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div>
+    <div className='-mt-10'>
       <div
         className='absolute bottom-44 left-70  h-[150px] w-[150px] sm:w-[350px] md:w-[400px]  rounded-3xl bg-gradient-to-r
-       from-violet-600 to-indigo-800 opacity-20 blur-3xl filter lg:bottom-24 lg:left-20 lg:h-28  lg:-rotate-12 lg:opacity-20 xl:h-40 xl:w-[400px]'
+       from-violet-600 to-indigo-800 opacity-30 blur-3xl filter lg:bottom-24 lg:left-20 lg:h-28  lg:-rotate-12 lg:opacity-20 xl:h-40 xl:w-[400px] z-0'
       ></div>
 
       <div
         className='absolute left-[48%] top-20  rotate-12 rounded-3xl bg-gradient-to-l 
-       from-rose-600/50 to-sky-400  opacity-20 blur-3xl filter h-44 w-[100px] sm:w-[200px] lg:h-32 lg:w-[450px] xl:h-44 xl:w-[600px]'
+       from-rose-600/50 to-sky-400  opacity-30 blur-3xl filter h-44 w-[100px] sm:w-[200px] lg:h-32 lg:w-[450px] xl:h-44 xl:w-[600px] z-0'
       ></div>
 
       <div className='flex items-center h-screen '>
@@ -32,9 +32,11 @@ const Hero = () => {
 
           <Link
             href='/'
-            className='px-4 py-2 rounded cursor-pointer bg-slate-700 lg:text-lg hover:bg-slate-900 absolute z-20'
+            className='cursor-pointer relative inline-flex items-center justify-center overflow-hidden  font-medium  rounded-lg group px-4 py-2 text-white bg-slate-700 lg:text-lg z-10 mt-2 shadow'
           >
-            Let's connect
+            <span className='absolute w-0 h-0 transition-all duration-500 ease-out bg-[#5C2EDE] rounded-full group-hover:w-56 group-hover:h-56'></span>
+            <span className='absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700'></span>
+            <span className='relative'>Let's Connect</span>
           </Link>
         </div>
         <div className=''>
