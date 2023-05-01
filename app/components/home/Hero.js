@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import heroImg from '../../../public/images/ariful1.jpeg';
+// import heroImg from '../../../public/images/hero-img.jpg';
 import Image from 'next/image';
+import Slider from './Slider';
 
 const Hero = () => {
   return (
@@ -12,11 +13,11 @@ const Hero = () => {
       ></div>
 
       <div
-        className='absolute left-[48%] top-20  rotate-12 rounded-3xl bg-gradient-to-l 
+        className='fixed left-[48%] top-20  rotate-12 rounded-3xl bg-gradient-to-l 
        from-rose-600/50 to-sky-400  opacity-30 blur-3xl filter h-44 w-[100px] sm:w-[200px] lg:h-32 lg:w-[450px] xl:h-44 xl:w-[600px] z-0'
       ></div>
 
-      <div className='flex items-center h-screen '>
+      <div className='flex items-center justify-between h-screen '>
         <div className='text-left md:text-left sm:w-[550px] '>
           <p>Hi there,</p>
           <h1 className=' text-[30px] md:text-[40px] lg:text-[50px] font-extrabold text-[#5c2ede]'>
@@ -39,8 +40,9 @@ const Hero = () => {
             <span className='relative'>Let's Connect</span>
           </Link>
         </div>
-        <div className=''>
+        <div className='hidden md:block w-[300px] lg:w-[400px] xl:w-[500px] h-[250px] lg:h-[300px] xl:h-[350px]'>
           {/* <Image src={heroImg} className='w-[300px]'></Image> */}
+          {/* <Slider /> */}
         </div>
       </div>
     </div>

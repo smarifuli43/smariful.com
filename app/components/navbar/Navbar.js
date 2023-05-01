@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import logo from '../../../public/images/ariful logo.png';
 
-import {  useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FaHome, FaAddressCard } from 'react-icons/fa';
@@ -22,7 +22,7 @@ const Navbar = () => {
               <Link href='/' className='flex-shrink-0 '>
                 <Image
                   src={logo}
-                  className='h-32 w-36 md:h-[140px] md:w-[160px] lg:h-[160px] lg:w-[180px] sm:-ml-2 md:-ml-3'
+                  className='h-24 w-32 -mt-6 md:-mt-8 lg:-mt-10 md:h-[120px] md:w-[140px] lg:h-[140px] lg:w-[170px] sm:-ml-2 md:-ml-3'
                   alt='Logo'
                 />
               </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <Link
                   href='/'
                   className={`mx-1 px-3 py-2 rounded-md text-base font-normal text-white hover:bg-slate-600 my-1 flex items-center
-                  ${pathName ==='/' ? 'active' : ''}
+                  ${pathName === '/' ? 'active' : ''}
                   `}
                 >
                   <FaHome className='text-white text-xl mr-2' />
