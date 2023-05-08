@@ -6,7 +6,7 @@ import Slider from './Slider';
 
 const Hero = () => {
   return (
-    <div className='-mt-10'>
+    <div className='h-[680px]'>
       <div
         className='absolute bottom-44 left-70  h-[150px] w-[150px] sm:w-[350px] md:w-[400px]  rounded-3xl bg-gradient-to-r
        from-violet-600 to-indigo-800 opacity-30 blur-3xl filter lg:bottom-24 lg:left-20 lg:h-28  lg:-rotate-12 lg:opacity-20 xl:h-40 xl:w-[400px] z-0'
@@ -17,16 +17,16 @@ const Hero = () => {
        from-rose-600/50 to-sky-400  opacity-30 blur-3xl filter h-44 w-[100px] sm:w-[200px] lg:h-32 lg:w-[450px] xl:h-44 xl:w-[600px] z-0'
       ></div>
 
-      <div className='flex items-center justify-between h-screen '>
+      <div className='flex items-center justify-between h-full  gap-2'>
         <div className='text-left md:text-left sm:w-[550px] '>
           <p>Hi there,</p>
           <h1 className=' text-[30px] md:text-[40px] lg:text-[50px] font-extrabold text-[#5c2ede]'>
             I’m Md Ariful Islam
           </h1>
-          <p className='text-[20px] lg:text-[30px] font-medium pt-2'>
+          <p className='text-[20px] lg:text-[30px] font-medium mt-2'>
             Front-End Web Developer
           </p>
-          <p className='text-gray-200 mb-4'>
+          <p className='text-gray-200 mb-4 mt-3'>
             I'm a undergraduate student and freelancer front‑end developer
             focused on building clean and user‑friendly websites.
           </p>
@@ -45,6 +45,7 @@ const Hero = () => {
           {/* <Slider /> */}
         </div>
       </div>
+      {/* <hr className='border-gray-600'/> */}
     </div>
   );
 };

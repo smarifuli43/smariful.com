@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className='top-0 z-30 shadow-2xl sticky backdrop-blur-2xl   bg-slate-900/90  py-1 '>
       <nav className=' max-w-[1200px] mx-auto '>
-        <div className='flex items-center justify-between h-12 md:h-16 px-4 sm:px-6 lg:px-8 '>
+        <div className='flex items-center justify-between h-12 md:h-16 px-4 md:px-6 lg:px-8 xl:px-0'>
           <div className='flex items-center w-screen justify-between'>
             <div className=''>
               <Link href='/' className='flex-shrink-0 '>
