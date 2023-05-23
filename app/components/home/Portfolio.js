@@ -1,4 +1,5 @@
 import React from 'react';
+import DrawSVGLine from '../DrawSVGLine';
 
 const Portfolio = () => {
   return (
@@ -10,6 +11,7 @@ const Portfolio = () => {
         Projects
       </h2>
       <hr className='mt-9 w-[100px] border border-gray-200' />
+      <DrawSVGLine />
     </div>
   );
 };

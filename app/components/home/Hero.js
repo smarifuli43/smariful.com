@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
         <div className='hidden md:block w-[300px] lg:w-[400px] xl:w-[500px] h-[250px] lg:h-[300px] xl:h-[350px]'>
           {/* <Image src={heroImg} className='w-[300px]'></Image> */}
-          {/* <Slider /> */}
+          <Slider />
         </div>
       </div>
       {/* <hr className='border-gray-600'/> */}
